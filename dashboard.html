@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BizMot Cards Dashboard</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+				min-height: 100vh;
+				padding: 40px 20px;
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			h1 {
+				text-align: center;
+				color: white;
+				font-size: 2.5rem;
+				margin-bottom: 10px;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+			}
+
+			.subtitle {
+				text-align: center;
+				color: rgba(255, 255, 255, 0.9);
+				font-size: 1.1rem;
+				margin-bottom: 40px;
+			}
+
+			.cards-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+				gap: 25px;
+				margin-top: 30px;
+			}
+
+			.card {
+				background: white;
+				border-radius: 12px;
+				overflow: hidden;
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+				text-decoration: none;
+				color: inherit;
+				display: block;
+			}
+
+			.card:hover {
+				transform: translateY(-8px);
+				box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+			}
+
+			.card-image {
+				width: 100%;
+				height: 180px;
+				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 3rem;
+				color: white;
+				font-weight: bold;
+			}
+
+			.card-content {
+				padding: 20px;
+			}
+
+			.card-title {
+				font-size: 1.3rem;
+				font-weight: 600;
+				margin-bottom: 8px;
+				color: #333;
+			}
+
+			.card-description {
+				font-size: 0.9rem;
+				color: #666;
+				line-height: 1.5;
+			}
+
+			.card-meta {
+				margin-top: 12px;
+				padding-top: 12px;
+				border-top: 1px solid #eee;
+				font-size: 0.85rem;
+				color: #999;
+			}
+
+			.view-button {
+				display: inline-block;
+				margin-top: 10px;
+				padding: 8px 16px;
+				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+				color: white;
+				border-radius: 6px;
+				font-size: 0.9rem;
+				font-weight: 500;
+				transition: opacity 0.3s ease;
+			}
+
+			.card:hover .view-button {
+				opacity: 0.9;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>🎴 BizMot Cards Dashboard</h1>
+			<p class="subtitle">Browse all available business cards</p>
+
+			<div class="cards-grid">
+				<a href="card-1.html" class="card">
+					<div class="card-image">1</div>
+					<div class="card-content">
+						<div class="card-title">Card 1 - Viet</div>
+						<div class="card-description">Business card with preview-1.jpg</div>
+						<div class="card-meta">Preview: preview-1.jpg</div>
+						<span class="view-button">View Card →</span>
+					</div>
+				</a>
+
+				<a href="card-2.html" class="card">
+					<div class="card-image">2</div>
+					<div class="card-content">
+						<div class="card-title">Card 2 - Viet</div>
+						<div class="card-description">Business card with preview-2.jpg</div>
+						<div class="card-meta">Preview: preview-2.jpg</div>
+						<span class="view-button">View Card →</span>
+					</div>
+				</a>
+
+				<a href="card-3.html" class="card">
+					<div class="card-image">3</div>
+					<div class="card-content">
+						<div class="card-title">Card 3 - Viet</div>
+						<div class="card-description">Business card with preview-3.jpg</div>
+						<div class="card-meta">Preview: preview-3.jpg</div>
+						<span class="view-button">View Card →</span>
+					</div>
+				</a>
+
+				<a href="card-4.html" class="card">
+					<div class="card-image">4</div>
+					<div class="card-content">
+						<div class="card-title">Card 4 - Viet</div>
+						<div class="card-description">Business card with preview-4.jpg</div>
+						<div class="card-meta">Preview: preview-4.jpg</div>
+						<span class="view-button">View Card →</span>
+					</div>
+				</a>
+
+				<a href="card-5.html" class="card">
+					<div class="card-image">5</div>
+					<div class="card-content">
+						<div class="card-title">Card 5 - Viet</div>
+						<div class="card-description">Business card with preview-5.jpg</div>
+						<div class="card-meta">Preview: preview-5.jpg</div>
+						<span class="view-button">View Card →</span>
+					</div>
+				</a>
+
+				<a href="card-6.html" class="card">
+					<div class="card-image">6</div>
+					<div class="card-content">
+						<div class="card-title">Card 6 - Viet</div>
+						<div class="card-description">Business card with preview-6.jpg</div>
+						<div class="card-meta">Preview: preview-6.jpg</div>
+						<span class="view-button">View Card →</span>
+					</div>
+				</a>
+
+				<a href="card-7.html" class="card">
+					<div class="card-image">7</div>
+					<div class="card-content">
+						<div class="card-title">Card 7 - Viet</div>
+						<div class="card-description">Business card with preview-7.jpg</div>
+						<div class="card-meta">Preview: preview-7.jpg</div>
+						<span class="view-button">View Card →</span>
+					</div>
+				</a>
+
+				<a href="card-8.html" class="card">
+					<div class="card-image">8</div>
+					<div class="card-content">
+						<div class="card-title">Card 8 - Viet</div>
+						<div class="card-description">Business card with preview-8.jpg</div>
+						<div class="card-meta">Preview: preview-8.jpg</div>
+						<span class="view-button">View Card →</span>
+					</div>
+				</a>
+
+				<a href="card-9.html" class="card">
+					<div class="card-image">9</div>
+					<div class="card-content">
+						<div class="card-title">Card 9 - Viet</div>
+						<div class="card-description">Business card with preview-9.jpg</div>
+						<div class="card-meta">Preview: preview-9.jpg</div>
+						<span class="view-button">View Card →</span>
+					</div>
+				</a>
+
+				<a href="card-10.html" class="card">
+					<div class="card-image">10</div>
+					<div class="card-content">
+						<div class="card-title">Card 10 - Viet</div>
+						<div class="card-description">Business card with preview-10.jpg</div>
+						<div class="card-meta">Preview: preview-10.jpg</div>
+						<span class="view-button">View Card →</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
